@@ -1,0 +1,49 @@
+.video-background {
+    background: linear-gradient(rgba(0, 0, 0, 8), rgba(0, 0, 0, 6));
+    position: fixed; 
+	right: 0; 
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -1000;
+	background-size: cover;
+}
+
+.has-background-dark50 {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.is-100vh {
+    height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .is-100vh {
+        height: 100vh;
+        margin-top: -260px;
+    }
+}
+
+.is-typewritter {
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+}
+
+.is-typewriter::after {
+    content: '|';
+    transition: ease-in-out 0.3s;
+    opacity: 1;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor { 
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.logo {
+    margin-top: -60px;
+    margin-left: 20px;
+}
